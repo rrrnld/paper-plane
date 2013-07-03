@@ -1,17 +1,21 @@
 {
-  "name": "{{hoodie_appname}}",
+  "name": "PaperPlane",
   "version": "1.0.0",
   "type": "app",
   "dependencies": {
     "hoodie-app": "git://github.com/hoodiehq/hoodie-app.git",
-    "hoodie-worker-users": "git://github.com/hoodiehq/worker-users.git"
+    "hoodie-worker-users": "git://github.com/hoodiehq/worker-users.git",
+    "hoodie-worker-shares": "git://github.com/hoodiehq/worker-shares.git"
   },
-  "subdomain": "hoodie-{{hoodie_appname}}",
+  "subdomain": "hoodie-papl",
   "domains": [
-    "admin.hoodie-{{hoodie_appname}}.jit.su",
-    "couch.hoodie-{{hoodie_appname}}.jit.su"
+    "admin.hoodie-papl.jit.su",
+    "couch.hoodie-papl.jit.su"
   ],
   "scripts": {
     "start": "node node_modules/hoodie-app/bin/start"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
   }
 }
