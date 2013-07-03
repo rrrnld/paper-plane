@@ -1,6 +1,7 @@
 {
   "name": "PaperPlane",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "repository": "http://github.com/11am/paper-plane",
   "type": "app",
   "dependencies": {
     "hoodie-app": "git://github.com/hoodiehq/hoodie-app.git",
@@ -16,6 +17,12 @@
     "start": "node node_modules/hoodie-app/bin/start"
   },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2"
   }
 }
