@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -59,19 +59,20 @@ module.exports = function(grunt) {
         dest: 'www/js/built.js'
       }
     },
-    uglify: {
-      options: {
-        sourceMap: 'www/js/source.js',
-        banner: '<%= meta.banner %>',
-        preserveComments: 'some',
-        report: 'gzip'
-      },
-      dist: {
-        files: {
-          'www/js/built.min.js':  [ 'src/js/*.js' ]
-        }
-      }
-    },
+    // uglify: {
+    //   options: {
+    //     sourceMap: 'www/js/source.js.map',
+    //     sourceMappingURL: 'source.js.map',
+    //     banner: '<%= meta.banner %>',
+    //     preserveComments: 'some',
+    //     report: 'gzip'
+    //   },
+    //   dist: {
+    //     files: {
+    //       'www/js/built.min.js':  [ 'src/js/*.js' ]
+    //     }
+    //   }
+    // },
     cssmin: {
       combine: {
         files: {
@@ -90,6 +91,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', [ 'jshint', 'cssmin', 'copy', 'concat', 'uglify' ]);
+  grunt.registerTask('default', [ 'jshint', 'cssmin', 'copy', 'concat' ]);
 
 };
