@@ -14,8 +14,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     meta: {
       banner: '/*!\n' +
-              ' * Paper Plane v<%= pkg.version %>\n' +
-              ' * <%= grunt.template.today("yyyy-mm-dd") %>\n' +
+              ' * Paper Plane\n' +
+              ' * built: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
               ' * http://11am.github.com/paper-plane\n' +
               ' * Copyright (c) <%= grunt.template.today("yyyy") %>\n' +
               ' * Arne Schlüter; Licensed MIT\n' +
