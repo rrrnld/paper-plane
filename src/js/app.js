@@ -1,3 +1,3 @@
-require([ 'vendor/jquery', 'editor.bootstrap' ], function ( $, bootstrap, hoodie ) {
-  bootstrap.init();
+require([ 'vendor/jquery', 'editor.renderloop', 'hoodie.singleton' ], function ( $, renderLoop, hoodie ) {
+  renderLoop.init();
 });
