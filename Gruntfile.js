@@ -90,12 +90,18 @@ module.exports = function(grunt) {
           generateSourceMaps: true,
           preserveLicenseComments: false,
           useSourceUrl: true,
+          paths: {
+            'vendor/jquery': 'vendor/jquery-2.0.3.min'
+          },
           shim: {
             'vendor/codemirror': {
               exports: 'CodeMirror'
             },
             'vendor/paper': {
               exports: 'paper'
+            },
+            'vendor/hoodie': {
+              exports: 'Hoodie'
             }
           }
         }

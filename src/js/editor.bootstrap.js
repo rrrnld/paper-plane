@@ -1,4 +1,4 @@
-define([ 'vendor/paper', 'vendor/codemirror', 'vendor/mode/javascript' ], function(paper, CodeMirror) {
+define([ 'vendor/paper', 'vendor/codemirror', 'vendor/mode/javascript' ], function ( paper, CodeMirror, hoodie ) {
   var w = window
     , d = document;
 

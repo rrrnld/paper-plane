@@ -1,3 +1,3 @@
-require(['editor.bootstrap'], function(bootstrap) {
+require([ 'vendor/jquery', 'editor.bootstrap' ], function ( $, bootstrap, hoodie ) {
   bootstrap.init();
 });
