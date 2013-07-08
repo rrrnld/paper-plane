@@ -4,14 +4,14 @@
   var script = d.getElementById( 'paperscript' )
     , textarea = d.getElementById( 'plane' )
     , canvas = d.getElementById( 'paper' )
-    , loadLink = d.getElementById( 'load') ;
+    , loadLink = d.getElementById( 'load');
 
   // important variables
-  var storageName = 'drawings'
-    , storageSpace = {}
-    , storagePrefix = 'drawing-'
-    , storageAmount = 0
-    , currentDrawing
+  // var storageName = 'drawings'
+  //   , storageSpace = {}
+  //   , storagePrefix = 'drawing-'
+  //   , storageAmount = 0
+  var currentDrawing
     , cm, ide
     , oldCode;
 
@@ -74,8 +74,6 @@
   var getDrawings = function () {
     storageSpace = JSON.parse( localStorage.getItem( storageName ) );
     storageAmount = 0;
-
-    var currentDrawing;
     
     for (var key in storageSpace) {
       if ( _hasOwn( storageSpace, key ) ) {
@@ -221,11 +219,11 @@
     currentDrawing = new Drawing();
 
     // set up localStorage
-    if ( !localStorage.getItem( storageName ) ) {
-      localStorage.setItem( storageName, JSON.stringify( storageSpace ) );
-    } else {
-      getDrawings();
-    }
+    // if ( !localStorage.getItem( storageName ) ) {
+    //   localStorage.setItem( storageName, JSON.stringify( storageSpace ) );
+    // } else {
+    //   getDrawings();
+    // }
   };
 
   setup();
