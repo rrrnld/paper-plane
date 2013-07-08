@@ -4,10 +4,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-requirejs');
 
   // Project configuration.
   grunt.initConfig({
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: 'src/js/*.js',
-      tasks: 'default'
+      tasks: 'dev'
     },
     jshint: {
       files: ['Gruntfile.js', 'src/js/*.js'],
@@ -54,27 +54,13 @@ module.exports = function(grunt) {
         separator: ';',
         banner: '<%= meta.banner %>'
       },
-      dist: {
+      build: {
         src: [ 'src/js/*.js' ],
         dest: 'www/js/built.js'
       }
     },
-    // uglify: {
-    //   options: {
-    //     sourceMap: 'www/js/source.js.map',
-    //     sourceMappingURL: 'source.js.map',
-    //     banner: '<%= meta.banner %>',
-    //     preserveComments: 'some',
-    //     report: 'gzip'
-    //   },
-    //   dist: {
-    //     files: {
-    //       'www/js/built.min.js':  [ 'src/js/*.js' ]
-    //     }
-    //   }
-    // },
     cssmin: {
-      combine: {
+      build: {
         files: {
           'www/css/style.css': [ 'src/css/*.css' ]
         }
@@ -86,11 +72,39 @@ module.exports = function(grunt) {
         cwd: 'src/js/vendor',
         src: ['**'],
         dest: 'www/js/vendor/'
+      },
+      modules: {
+        expand: true,
+        cwd: 'src/js/module',
+        src: ['**'],
+        dest: 'www/js/module'
+      }
+    },
+    requirejs: {
+      build: {
+        options: {
+          baseUrl: 'src/js',
+          name: 'app',
+          out: 'www/js/main.js',
+          optimize: 'uglify2',
+          generateSourceMaps: true,
+          preserveLicenseComments: false,
+          useSourceUrl: true,
+          shim: {
+            'vendor/codemirror': {
+              exports: 'CodeMirror'
+            },
+            'vendor/paper': {
+              exports: 'paper'
+            }
+          }
+        }
       }
     }
   });
 
   // Default task.
+  grunt.registerTask('dev', [ 'cssmin', 'copy', 'requirejs' ] )
   grunt.registerTask('default', [ 'jshint', 'cssmin', 'copy', 'concat' ]);
 
 };

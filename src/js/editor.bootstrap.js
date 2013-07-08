@@ -1,4 +1,6 @@
-(function (w, d) {
+define([ 'vendor/paper', 'vendor/codemirror', 'vendor/mode/javascript' ], function(paper, CodeMirror) {
+  var w = window
+    , d = document;
 
   // necessary elements
   var script = d.getElementById( 'paperscript' )
@@ -226,6 +228,9 @@
     // }
   };
 
-  setup();
+  // expose method to set up
+  return {
+    init: setup
+  };
 
-})( window, document );
+});
