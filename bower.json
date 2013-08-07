@@ -1,0 +1,14 @@
+{
+  "name": "PaperPlane",
+  "version": "0.1.0",
+  "dependencies": {
+    "codemirror": "~3.15.0",
+    "jquery": "~2.0.3",
+    "paper": "~0.9.9",
+    "requirejs": "~2.1.8",
+    "hoodie": "~0.2.5"
+  },
+  "resolutions": {
+    "jquery": "~2.0.3"
+  }
+}

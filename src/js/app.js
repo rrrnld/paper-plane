@@ -1,3 +1,3 @@
-require([ 'vendor/jquery', 'editor.renderloop', 'hoodie.singleton' ], function ( $, renderLoop, hoodie ) {
-  renderLoop.init();
+require([ 'vendor/jquery/jquery', 'app.init', 'hoodie.singleton' ], function ( $, app, hoodie ) {
+  app.init();
 });

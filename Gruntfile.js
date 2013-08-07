@@ -91,7 +91,9 @@ module.exports = function(grunt) {
           preserveLicenseComments: false,
           useSourceUrl: true,
           paths: {
-            'vendor/jquery': 'vendor/jquery-2.0.3.min'
+            'vendor/codemirror': 'vendor/codemirror/lib/codemirror',
+            'vendor/paper': 'vendor/paper/dist/paper-core',
+            'vendor/hoodie': 'vendor/hoodie/dist/hoodie'
           },
           shim: {
             'vendor/codemirror': {
