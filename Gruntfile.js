@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: 'src/js/*.js',
-      tasks: 'dev'
+      tasks: 'default'
     },
     jshint: {
       files: ['Gruntfile.js', 'src/js/*.js'],
@@ -112,7 +112,7 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('dev', [ 'cssmin', 'copy', 'requirejs' ] )
-  grunt.registerTask('default', [ 'jshint', 'cssmin', 'copy', 'concat' ]);
+  grunt.registerTask('default', [ 'cssmin', 'copy', 'requirejs' ] )
+  // grunt.registerTask('default', [ 'jshint', 'cssmin', 'copy', 'concat' ]);
 
 };
