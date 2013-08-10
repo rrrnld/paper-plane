@@ -86,10 +86,10 @@ module.exports = function(grunt) {
           baseUrl: 'src/js',
           name: 'app',
           out: 'www/js/main.js',
-          optimize: 'uglify2',
+          optimize: 'none',
           generateSourceMaps: true,
           preserveLicenseComments: false,
-          useSourceUrl: true,
+          useSourceUrl: false,
           paths: {
             'vendor/codemirror': 'vendor/codemirror/lib/codemirror',
             'vendor/paper': 'vendor/paper/dist/paper-core',

@@ -27,6 +27,5 @@
     "commit": "4e980368283ed0e1e6acc8f1f3e240d8ee78b845"
   },
   "_source": "git://github.com/paperjs/paper.js.git",
-  "_target": "~0.9.9",
-  "_direct": true
+  "_target": "~0.9.9"
 }
