@@ -6,10 +6,10 @@ with the awesome [paper.js](http://paperjs.org)-library.
 
 ## Running
 
-	1. Install [CouchDB](https://couchdb.apache.org/) (any version >= 1.2.0
-		should work fine)
-	2. Install [node.js](http://nodejs.org) (Development is using version 0.10.x)
-	3. Install [bower](http://bower.io) (`npm install -g bower`)
+1. Install [CouchDB](https://couchdb.apache.org/) (any version >= 1.2.0
+	should work fine)
+2. Install [node.js](http://nodejs.org) (Development is using version 0.10.x)
+3. Install [bower](http://bower.io) (`npm install -g bower`)
 
 Once all of that is done, `cd` into this directory and run `npm install && bower
 install` to install all dependencies. Issue `npm start` and you're good to go!
