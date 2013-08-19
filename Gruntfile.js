@@ -87,6 +87,7 @@ module.exports = function(grunt) {
           name: 'app',
           out: 'www/js/main.js',
           optimize: 'none',
+          exclude: [ 'vendor/paper' ],
           generateSourceMaps: true,
           preserveLicenseComments: false,
           useSourceUrl: false,
@@ -98,9 +99,6 @@ module.exports = function(grunt) {
           shim: {
             'vendor/codemirror': {
               exports: 'CodeMirror'
-            },
-            'vendor/paper': {
-              exports: 'paper'
             },
             'vendor/hoodie': {
               exports: 'Hoodie'
