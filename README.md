@@ -28,4 +28,5 @@ install` to install all dependencies. Issue `npm start` and you're good to go!
 
 For browser side package management bower is used and the whole backend runs
 with the help of hoodie (`npm install -g hoodie-cli`). The build process is
-handled using [Grunt](http://gruntjs.com/) (`npm install -g grunt-cli`).
+handled using [Grunt](http://gruntjs.com/) (`npm install -g grunt-cli`),
+simply run `grunt` in the directory to build.
