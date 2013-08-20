@@ -1,4 +1,4 @@
-define([ 'vendor/paper', 'vendor/codemirror', 'vendor/mode/javascript' ], function ( paper, CodeMirror, hoodie ) {
+define([ 'vendor/paper', 'vendor/codemirror/lib/codemirror', 'editor.config' ], function ( paper, CodeMirror ) {
   var w = window
     , d = document;
 

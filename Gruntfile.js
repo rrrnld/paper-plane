@@ -92,12 +92,11 @@ module.exports = function(grunt) {
           preserveLicenseComments: false,
           useSourceUrl: false,
           paths: {
-            'vendor/codemirror': 'vendor/codemirror/lib/codemirror',
-            'vendor/paper': 'vendor/paper/dist/paper-core',
+            'vendor/paper': 'empty:',
             'vendor/hoodie': 'vendor/hoodie/dist/hoodie'
           },
           shim: {
-            'vendor/codemirror': {
+            'vendor/codemirror/lib/codemirror': {
               exports: 'CodeMirror'
             },
             'vendor/hoodie': {
