@@ -99,6 +99,9 @@ module.exports = function(grunt) {
             'vendor/codemirror/lib/codemirror': {
               exports: 'CodeMirror'
             },
+            'vendor/codemirror/addon/tern/tern': {
+              exports: 'CodeMirror.TernServer'
+            },
             'vendor/hoodie': {
               exports: 'Hoodie'
             }

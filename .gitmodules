@@ -1,0 +1,3 @@
+[submodule "src/js/vendor/tern"]
+	path = src/js/vendor/tern
+	url = git@github.com:marijnh/tern.git
