@@ -1,10 +1,11 @@
 // this file is used to load the necessary addons and plugins for codemirror
 require([
+	'vendor/tern/lib/tern',
 	'vendor/codemirror/addon/tern/tern',
 	'vendor/codemirror/mode/javascript/javascript'
 ], function (TernServer) {
 	return {
-		tern: new TernServer({ 
+		tern: new TernServer.Server({ 
 			useWorker: !!window.Worker,
 			workerScript: 'js/vendor/codemirror/addon/tern/worker.js'
 		})

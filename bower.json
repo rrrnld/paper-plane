@@ -6,7 +6,8 @@
     "jquery": "~2.0.3",
     "paper": "~0.9.9",
     "requirejs": "~2.1.8",
-    "hoodie": "~0.2.5"
+    "hoodie": "~0.2.5",
+    "acorn": "~0.3.1"
   },
   "resolutions": {
     "jquery": "~2.0.3"

@@ -1,6 +1,7 @@
 requirejs.config({
 	paths: {
-		'vendor/paper': 'vendor/paper/dist/paper-full'
+		'vendor/paper': 'vendor/paper/dist/paper-full',
+		'acorn': 'vendor/acorn'
 	}
 });
 

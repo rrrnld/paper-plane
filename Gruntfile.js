@@ -93,7 +93,8 @@ module.exports = function(grunt) {
           useSourceUrl: false,
           paths: {
             'vendor/paper': 'empty:',
-            'vendor/hoodie': 'vendor/hoodie/dist/hoodie'
+            'vendor/hoodie': 'vendor/hoodie/dist/hoodie',
+            'acorn': 'empty:'
           },
           shim: {
             'vendor/codemirror/lib/codemirror': {
