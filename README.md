@@ -12,7 +12,9 @@ with the awesome [paper.js](http://paperjs.org)-library.
 3. Install [bower](http://bower.io) (`npm install -g bower`)
 
 Once all of that is done, `cd` into this directory and run `npm install && bower
-install` to install all dependencies. Issue `npm start` and you're good to go!
+install`. A final `git submodule init && git submodule update` is needed for
+[tern](http://ternjs.net) and voila, you've got all dependencies installed.
+Issue `npm start` and you're good to go!
 
 ## What's working
 
