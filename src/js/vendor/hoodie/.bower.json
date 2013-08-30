@@ -1,0 +1,28 @@
+{
+  "name": "hoodie",
+  "version": "0.2.5",
+  "main": [
+    "./dist/hoodie.js"
+  ],
+  "dependencies": {
+    "jquery": "~1.10.2"
+  },
+  "ignore": [
+    "test/",
+    "src/",
+    ".gitignore",
+    "Gruntfile.js",
+    "node_modules",
+    "testem.yml"
+  ],
+  "homepage": "https://github.com/hoodiehq/hoodie.js",
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.5",
+    "commit": "de7c611452ccf76575bc5da6eef1541248c0e23d"
+  },
+  "_source": "git://github.com/hoodiehq/hoodie.js.git",
+  "_target": "~0.2.5",
+  "_originalSource": "hoodie"
+}

@@ -2,5 +2,6 @@
 node_modules
 www/js
 www/css
-data/
-src/js/vendor
+data
+src/js/vendor/*
+!src/js/vendor/tern/*
